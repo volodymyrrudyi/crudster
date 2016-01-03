@@ -30,7 +30,8 @@
   },
   "peerDependencies": {
     "mongoose": ">= 4.x",
-    "express": ">= 4.x"
+    "express": ">= 4.x",
+    "bodyParser": ">= 1.14.x"
   },
   "devDependencies": {
     "babel-core": "^6.3.13",
