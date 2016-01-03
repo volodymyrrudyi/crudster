@@ -1,6 +1,7 @@
 # crudster
 Express.js middleware to quickly create CRUD REST API for your Mongoose models
 
+[![Build Status](https://travis-ci.org/volodymyrrudyi/crudster.svg?branch=master)](https://travis-ci.org/volodymyrrudyi/crudster)
 
 ## Installation
 npm install crudster
