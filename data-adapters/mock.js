@@ -1,14 +1,14 @@
+import BaseAdapter from './base';
 import merge from 'merge';
+
 const DEFAULT_PRIMARY_KEY = "_id";
 
 
 /** Mongoose data adapter */
-export default class MockAdapter {
+export default class MockAdapter extends BaseAdapter{
 
   constructor(model, primaryKey = DEFAULT_PRIMARY_KEY){
-    this.model = model;
-    this.modelName = 'mock_' + model;
-    this.primaryKey = primaryKey;
+    super(model, 'mock_' + model, primaryKey);
     this.modelCounter = 0;
     this.models = {};
   }

@@ -1,14 +1,12 @@
-
+import BaseAdapter from './base';
 const DEFAULT_PRIMARY_KEY = "_id";
 
 
 /** Mongoose data adapter */
-export default class MongooseAdapter {
+export default class MongooseAdapter extends BaseAdapter{
 
   constructor(model, primaryKey = DEFAULT_PRIMARY_KEY){
-    this.model = model;
-    this.modelName = model.modelName.toLowerCase();
-    this.primaryKey = primaryKey;
+    super(model, model.modelName.toLowerCase(), primaryKey);
   }
 
   /**

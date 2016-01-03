@@ -25,15 +25,15 @@ npm install crudster
     import { Router } from 'express';
     var api = Router();
 
-    api.use('/v1/', personsController.middleware());
+    api.use('/v1/persons', personsController.middleware());
 
 
-This will result in the following API endpoints (note the pluralizization):
+This will result in the following API endpoints:
 
     POST    /v1/persons             - creates a new person
-    GET     /v1/person/:username    - returns a person by username
-    PUT     /v1/person/:username    - updates a person with provided JSON
-    DELETE  /v1/person/:username    - deletes a person
+    GET     /v1/persons/:username    - returns a person by username
+    PUT     /v1/persons/:username    - updates a person with provided JSON
+    DELETE  /v1/persons/:username    - deletes a person
 
 
 ## Testing

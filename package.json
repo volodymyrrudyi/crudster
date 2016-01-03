@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/volodymyrrudyi/crudster#readme",
   "dependencies": {
-    "merge": "^1.2.0",
-    "pluralize": "^1.2.1"
+    "merge": "^1.2.0"
   },
   "peerDependencies": {
     "mongoose": ">= 4.x",
