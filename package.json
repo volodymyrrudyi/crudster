@@ -27,8 +27,11 @@
   "homepage": "https://github.com/volodymyrrudyi/crudster#readme",
   "dependencies": {
     "merge": "^1.2.0",
-    "mongoose": "^4.3.4",
     "pluralize": "^1.2.1"
+  },
+  "peerDependencies": {
+    "mongoose": ">= 4.x",
+    "express": ">= 4.x"
   },
   "devDependencies": {
     "babel-core": "^6.3.13",
